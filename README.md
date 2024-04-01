@@ -1,4 +1,4 @@
-# Blog Title :link: https://lx521603.github.io 
+# 笔记 :link: https://lx521603.github.io 
 ### :page_facing_up: [3](https://lx521603.github.io/tag.html) 
 ### :speech_balloon: 0 
 ### :hibiscus: 170 
