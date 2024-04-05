@@ -1,5 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>笔记</title><link>https://lx521603.github.io</link><description>Blog description</description><copyright>笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://lx521603.github.io</link></image><lastBuildDate>Mon, 01 Apr 2024 15:33:36 +0000</lastBuildDate><managingEditor>笔记</managingEditor><ttl>60</ttl><webMaster>笔记</webMaster><item><title>二级路由或者旁路由openwrt开启ipv6</title><link>https://lx521603.github.io/post/er-ji-lu-you-huo-zhe-pang-lu-you-openwrt-kai-qi-ipv6.html</link><description>配置/etc/config/dhcp&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>笔记</title><link>https://lx521603.github.io</link><description>Blog description</description><copyright>笔记</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://lx521603.github.io</link></image><lastBuildDate>Fri, 05 Apr 2024 19:04:34 +0000</lastBuildDate><managingEditor>笔记</managingEditor><ttl>60</ttl><webMaster>笔记</webMaster><item><title>反代代码</title><link>https://lx521603.github.io/post/fan-dai-dai-ma.html</link><description>location / {&#13;
+      proxy_pass http://127.0.0.1:3000/;       # 注意改成你实际使用的端口&#13;
+      rewrite ^/(.*)$ /$1 break;&#13;
+      proxy_redirect off;&#13;
+      proxy_set_header Host $host;&#13;
+      proxy_set_header X-Forwarded-Proto $scheme;&#13;
+      proxy_set_header X-Real-IP $remote_addr;&#13;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;&#13;
+      proxy_set_header Upgrade-Insecure-Requests 1;&#13;
+      proxy_set_header X-Forwarded-Proto https;&#13;
+    }。</description><guid isPermaLink="true">https://lx521603.github.io/post/fan-dai-dai-ma.html</guid><pubDate>Fri, 05 Apr 2024 19:04:04 +0000</pubDate></item><item><title>二级路由或者旁路由openwrt开启ipv6</title><link>https://lx521603.github.io/post/er-ji-lu-you-huo-zhe-pang-lu-you-openwrt-kai-qi-ipv6.html</link><description>配置/etc/config/dhcp&#13;
 &#13;
 config dhcp 'wan6' ##旁路由lan6&#13;
 	option dhcpv6 'relay'&#13;
