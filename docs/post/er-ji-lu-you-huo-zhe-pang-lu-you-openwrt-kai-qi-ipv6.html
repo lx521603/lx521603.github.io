@@ -9,7 +9,30 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="二级路由或者旁路由openwrt开启ipv6">
+<meta name="description" content="配置/etc/config/dhcp
+
+config dhcp 'wan6' ##旁路由lan6
+	option dhcpv6 'relay'
+	option ra 'relay'
+	option ndp 'relay'
+	option master '1'
+	option interface 'wan6'
+
+。">
+<meta property="og:title" content="二级路由或者旁路由openwrt开启ipv6">
+<meta property="og:description" content="配置/etc/config/dhcp
+
+config dhcp 'wan6' ##旁路由lan6
+	option dhcpv6 'relay'
+	option ra 'relay'
+	option ndp 'relay'
+	option master '1'
+	option interface 'wan6'
+
+。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lx521603.github.io/post/er-ji-lu-you-huo-zhe-pang-lu-you-openwrt-kai-qi-ipv6.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
 <title>二级路由或者旁路由openwrt开启ipv6</title>
 
 
